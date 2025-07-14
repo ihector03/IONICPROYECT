@@ -1,0 +1,16 @@
+<app-header titulo="Infinite"></app-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">infinite</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item *ngFor="let item of visibleData; let i = index">
+      <ion-label>Hola {{i+1}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="loadMoreData($event)" >
+    <ion-infinite-scroll-content loadingText="Cargando más..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

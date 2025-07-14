@@ -1,0 +1,28 @@
+<app-header titulo="Input"></app-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre" [(ngModel)]="alumno.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellidos" [(ngModel)]="alumno.apellidos"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime 
+        displayFormat="DD/MM/YYYY" 
+        [(ngModel)]="alumno.nacimiento">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Edad" [value]="edad" readonly></ion-input>
+      <ion-note slot="end">años</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Email" type="email" [(ngModel)]="alumno.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Teléfono" type="tel" [(ngModel)]="alumno.telefono"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
