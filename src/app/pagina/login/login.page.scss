@@ -1,0 +1,17 @@
+ion-card {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+ion-button {
+  margin-top: 15px;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-item {
+  --background: transparent;
+  --padding-start: 0;
+}
